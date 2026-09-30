@@ -1,0 +1,23 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#172033}
+header{background:#2563eb;color:white;text-align:center;padding:28px 15px}
+header h1{margin:0 0 6px;font-size:30px}
+header p{margin:0;opacity:.9}
+main{max-width:900px;margin:25px auto;padding:0 15px}
+.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:20px}
+.summary div{background:white;border-radius:12px;padding:18px;text-align:center;box-shadow:0 3px 12px #00000010}
+.summary b{display:block;font-size:28px;color:#2563eb}
+.summary span{font-size:13px;color:#64748b}
+.summary .green b{color:#16a34a}.summary .red b{color:#dc2626}
+.card{background:white;border-radius:12px;padding:22px;margin-bottom:20px;box-shadow:0 3px 12px #00000010}
+h2{margin-top:0}
+.slots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.slot{padding:22px;text-align:center;border-radius:10px;border:2px solid #bbf7d0;background:#f0fdf4;color:#15803d;font-weight:bold}
+.slot.booked{border-color:#fecaca;background:#fef2f2;color:#dc2626}
+.slot small{display:block;margin-top:7px;font-weight:normal}
+form{display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:10px}
+input,select,button{padding:12px;border-radius:8px;border:1px solid #dbe2ea;font-size:14px}
+button{background:#2563eb;color:white;border:0;font-weight:bold}
+#message{font-weight:bold;text-align:center}
+.success{color:#15803d}.error{color:#dc2626}
+@media(max-width:700px){.summary{grid-template-columns:1fr 1fr 1fr}.slots{grid-template-columns:1fr 1fr}form{grid-template-columns:1fr}}

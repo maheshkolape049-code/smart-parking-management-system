@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 Smart Parking</h1>
+    <p>Parking Management System</p>
+  </header>
+
+  <main>
+    <section class="summary">
+      <div><b id="total">0</b><span>Total Slots</span></div>
+      <div class="green"><b id="available">0</b><span>Available</span></div>
+      <div class="red"><b id="booked">0</b><span>Booked</span></div>
+    </section>
+
+    <section class="card">
+      <h2>Parking Slots</h2>
+      <div id="slots" class="slots"></div>
+    </section>
+
+    <section class="card">
+      <h2>Book a Slot</h2>
+      <form id="form">
+        <input id="vehicle" placeholder="Vehicle Number (e.g. MH12AB1234)" required>
+        <input id="owner" placeholder="Owner Name" required>
+        <select id="slot" required></select>
+        <button type="submit">Book Slot</button>
+      </form>
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
